@@ -85,7 +85,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="769-yR-AOC" customClass="ButtonDesignable" customModule="__MVP_achitecture" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="769-yR-AOC" customClass="ButtonDesignable" customModule="__MVP_achitecture" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="382" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.51372549020000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>

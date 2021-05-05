@@ -19,8 +19,9 @@ class AddNewUserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-//        validateTextField()
-        
+        validateTextField()
+    
+        // Dismiss Keyboard when textField finish
         self.dismissKey()
     }
     
@@ -36,13 +37,12 @@ class AddNewUserViewController: UIViewController {
             addUserButton.isEnabled = true
         }
     }
-    
 
     @IBAction func handleAddUser(_ sender: Any) {
         print("Handle add new user")
         present.addNewUser(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!)
-        
         userVC.presenter.getUsers()
+        
         self.dismiss(animated: true)
     }
 }

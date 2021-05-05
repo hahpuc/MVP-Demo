@@ -39,7 +39,6 @@ class UserViewController: UIViewController {
             vc?.userVC = self
         }
     }
-
 }
 
 // MARK: - Extension
