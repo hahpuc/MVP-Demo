@@ -33,11 +33,11 @@ class UserViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.destination is AddNewUserViewController {
-//            let vc = segue.destination as? AddNewUserViewController
-//            
-//            vc?.userVC = self
-//        }
+        if segue.destination is AddNewUserViewController {
+            let vc = segue.destination as? AddNewUserViewController
+            
+            vc?.userVC = self
+        }
     }
 
 }

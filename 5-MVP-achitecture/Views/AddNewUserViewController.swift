@@ -14,7 +14,7 @@ class AddNewUserViewController: UIViewController {
     @IBOutlet weak var addUserButton: ButtonDesignable!
     
     let present = AddNewPresenter()
-//    var userVC = UserViewController()
+    var userVC = UserViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,19 +42,8 @@ class AddNewUserViewController: UIViewController {
         print("Handle add new user")
         present.addNewUser(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!)
         
+        userVC.presenter.getUsers()
         self.dismiss(animated: true)
     }
 }
 
-extension UIViewController {
-    func dismissKey() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyBoard))
-        
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyBoard() {
-        view.endEditing(true)
-    }
-}
